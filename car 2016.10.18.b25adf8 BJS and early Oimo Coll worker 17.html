@@ -6,7 +6,7 @@
     <title>car b25adf8 2017.10.18. e</title>
 
 	<script src="Oimo.06.15.js"></script>
-	<script src="babylon.max.18.b25adf8.js"></script>
+	<script src="babylon.max.18.b25adf8.collwork17.js"></script>
 	
     <style>
         html, body {
@@ -372,11 +372,11 @@ var createScene = function () {
         sJoint4.setMotor(steering, 1);
 
         var velocity = Control.Velocity || 0;
-        var wheelVelocity = 10 * Math.PI * velocity;
-        joint1.setMotor(wheelVelocity, 6);
-        joint2.setMotor(wheelVelocity, 6);
-		joint3.setMotor(wheelVelocity, 6);
-        joint4.setMotor(wheelVelocity, 6);
+        var wheelVelocity = 10000 * Math.PI * velocity;
+        joint1.setMotor(wheelVelocity, 600);
+        joint2.setMotor(wheelVelocity, 600);
+		joint3.setMotor(wheelVelocity, 600);
+        joint4.setMotor(wheelVelocity, 600);
     }
 	
 	scene.registerBeforeRender(update);

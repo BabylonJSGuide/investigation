@@ -372,11 +372,11 @@ var createScene = function () {
         sJoint4.setMotor(steering, 1);
 
         var velocity = Control.Velocity || 0;
-        var wheelVelocity = 10000 * Math.PI * velocity;
-        joint1.setMotor(wheelVelocity, 600);
-        joint2.setMotor(wheelVelocity, 600);
-		joint3.setMotor(wheelVelocity, 600);
-        joint4.setMotor(wheelVelocity, 600);
+        var wheelVelocity = 10 * Math.PI * velocity;
+        joint1.setMotor(wheelVelocity, 6);
+        joint2.setMotor(wheelVelocity, 6);
+		joint3.setMotor(wheelVelocity, 6);
+        joint4.setMotor(wheelVelocity, 6);
     }
 	
 	scene.registerBeforeRender(update);
